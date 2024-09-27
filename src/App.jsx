@@ -17,6 +17,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contacts" element={<Contacts />} />
+          {/* Fallback route to Home */}
+          <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
       </Router>

@@ -8,3 +8,8 @@ export default defineConfig({
   plugins: [react()],
   base: '/website/',  // This must match your repository name
 })
+
+export default {
+  base: '/website/',
+}
+

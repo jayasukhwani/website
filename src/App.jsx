@@ -4,7 +4,7 @@ import Portfolio from "./pages/Portfolio";
 import Contacts from "./pages/Contacts";
 import Footer from './components/Footer';
 import Header from "./components/Header";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 function App() {

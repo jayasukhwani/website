@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import {Sling as Hamburger} from 'hamburger-react'
 import { NavLink, Link } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaInstagram, FaItchIo } from "react-icons/fa";
-import Logo from "../../assets/Jaya_logo-X7ZCvLty.png";
+import Logo from "../images/Jaya_logo.png";
 
 
 const Header = () => {

@@ -10,6 +10,7 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   return (
     <AnimatePresence>
+      <Router basename="/website">
       <Router>
         <Header />
         <Routes>

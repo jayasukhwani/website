@@ -19,7 +19,7 @@ jobs:
           node-version: '20'  # Make sure to use the correct version of Node.js
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build the project
         run: npm run build  # This command should build your project

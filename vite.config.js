@@ -8,4 +8,7 @@ export default defineConfig({
   plugins: [react()],
   // base: '/',
   base: '/website/', //for Github
+  build: {
+    outDir: 'docs',
+  }
 });

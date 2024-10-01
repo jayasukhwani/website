@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from "react";
-import {Sling as Hamburger} from 'hamburger-react'
-import { NavLink, Link } from "react-router-dom";
-import { FaLinkedin, FaGithub, FaInstagram, FaItchIo } from "react-icons/fa";
-import Logo from "../assets/Jaya_logo-xTZCvLty.png";
-
-
-
+import { Sling as Hamburger } from 'hamburger-react';
+import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import Logo from "/assets/Jaya_logo-xTZCvLty.png";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -27,7 +23,7 @@ const Header = () => {
         <Link to="/">
           <img className="h-6 sm:max-h-7" src={Logo} alt="Logo image" />
         </Link>
-         {/*nav-links*/}
+        {/*nav-links*/}
         <ul className="hidden gap-10 md:flex">
           <NavLink to="/">
             <li>Home</li>
@@ -42,7 +38,7 @@ const Header = () => {
             <li>Contacts</li>
           </NavLink>
         </ul>
-        
+
         {/*side-menu icon*/}
         <div className="z-20 text-black cursor-pointer md:hidden" onClick={handleClick}>
           <Hamburger toggle={setOpen} toggled={isOpen} direction="left" size={25} color={`${isOpen ? "white" : "black"}`} duration={0.3} rounded />
@@ -72,7 +68,7 @@ const Header = () => {
               <li>Contacts</li>
             </Link>
           </ul>
-          
+
         </div>
       </div>
     </header>

@@ -1,10 +1,10 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../utils/variants";
-import TextSpan from "../utils/textSpan";
+import React from "react";
 import { FiDownload } from "react-icons/fi";
-import about from "../images/jaya_about.png";
 import Cv from "../constants/jaya_sukhwani_resume.pdf";
+import about from "../images/jaya_about.png";
+import TextSpan from "../utils/textSpan";
+import { fadeIn } from "../utils/variants";
 
 const Hero2 = () => {
   const name = "About me.".split("");
@@ -72,7 +72,7 @@ const Hero2 = () => {
               <a
                 className="flex items-center gap-2"
                 href={Cv}
-                download="CV-GiorgioFaini"
+                download="Jaya_Sukhwani_Resume.pdf"
                 rel="noopener noreferrer"
               >
                 <FiDownload size={20} />
